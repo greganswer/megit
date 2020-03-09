@@ -57,7 +57,10 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "github:greganswer/megit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greganswer/megit"
+  },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "yarn lint",
