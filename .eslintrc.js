@@ -10,8 +10,12 @@ module.exports = {
     },
     "parserOptions": {
         "ecmaVersion": 2018,
+        "project": "./tsconfig.json",
         "sourceType": "module"
     },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["oclif"],
     "rules": {
+        "semi": ["error", "never"]
     }
 };

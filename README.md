@@ -29,29 +29,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`megit hello [FILE]`](#megit-hello-file)
-* [`megit help [COMMAND]`](#megit-help-command)
-* [`megit open [FILE]`](#megit-open-file)
-
-## `megit hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ megit hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ megit hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/greganswer/megit/blob/v0.0.0/src/commands/hello.ts)_
+- [`megit help [COMMAND]`](#megit-help-command)
+- [`megit open [FILE]`](#megit-open-file)
 
 ## `megit help [COMMAND]`
 
@@ -86,3 +65,15 @@ OPTIONS
 
 _See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.0.0/src/commands/open.ts)_
 <!-- commandsstop -->
+
+# Development
+
+1. Generate a command using the [oclif command generator](https://oclif.io/docs/generator_commands)
+1. Write an [oclif test](https://oclif.io/docs/testing)
+1. Write an [oclif command](https://oclif.io/docs/commands) 
+1. Use the [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) library to ask for user input
+1. Use the [listr](https://github.com/SamVerschueren/listr) library for multi step commands
+1. Run `yarn test` before committing your changes
+
+**References:**
+- [eslint-plugin-oclif](https://github.com/oclif/eslint)
