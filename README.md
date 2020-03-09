@@ -21,7 +21,7 @@ $ npm install -g megit
 $ megit COMMAND
 running command...
 $ megit (-v|--version|version)
-megit/0.1.1 darwin-x64 node-v13.8.0
+megit/0.1.2 darwin-x64 node-v13.8.0
 $ megit --help [COMMAND]
 USAGE
   $ megit COMMAND
@@ -59,7 +59,7 @@ USAGE
   $ megit open
 ```
 
-_See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.1.1/src/commands/open.ts)_
+_See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.1.2/src/commands/open.ts)_
 <!-- commandsstop -->
 
 # Development
