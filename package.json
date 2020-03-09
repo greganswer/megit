@@ -1,7 +1,7 @@
 {
   "name": "megit",
   "description": "Run Git work flows for GitHub with issue tracking ticket numbers.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Greg Answer <greganswer@gmail.com>",
   "bin": {
     "megit": "./bin/run"

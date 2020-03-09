@@ -12,6 +12,7 @@ Run Git work flows for GitHub with issue tracking ticket numbers.
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
+* [Development](#development)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -20,7 +21,7 @@ $ npm install -g megit
 $ megit COMMAND
 running command...
 $ megit (-v|--version|version)
-megit/0.0.0 darwin-x64 node-v13.8.0
+megit/0.1.0 darwin-x64 node-v13.8.0
 $ megit --help [COMMAND]
 USAGE
   $ megit COMMAND
@@ -29,8 +30,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-- [`megit help [COMMAND]`](#megit-help-command)
-- [`megit open [FILE]`](#megit-open-file)
+* [`megit help [COMMAND]`](#megit-help-command)
+* [`megit open`](#megit-open)
 
 ## `megit help [COMMAND]`
 
@@ -49,21 +50,16 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3/src/commands/help.ts)_
 
-## `megit open [FILE]`
+## `megit open`
 
-describe the command here
+Open an issue in the default web browser
 
 ```
 USAGE
-  $ megit open [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ megit open
 ```
 
-_See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.0.0/src/commands/open.ts)_
+_See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.1.0/src/commands/open.ts)_
 <!-- commandsstop -->
 
 # Development
