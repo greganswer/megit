@@ -30,8 +30,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`megit help [COMMAND]`](#megit-help-command)
-* [`megit open`](#megit-open)
+- [`megit help [COMMAND]`](#megit-help-command)
+- [`megit open`](#megit-open)
 
 ## `megit help [COMMAND]`
 
@@ -64,9 +64,17 @@ _See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.1.
 
 # Development
 
-1. Generate a command using the [oclif command generator](https://oclif.io/docs/generator_commands)
-1. Write an [oclif test](https://oclif.io/docs/testing)
-1. Write an [oclif command](https://oclif.io/docs/commands) 
+1. Generate a command by running `npx oclif <COMMAND_NAME>` (the [oclif command generator](https://oclif.io/docs/generator_commands))
+1. Write the [oclif test](https://oclif.io/docs/testing)
+1. Write the [oclif command](https://oclif.io/docs/commands) 
 1. Use the [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) library to ask for user input
 1. Use the [listr](https://github.com/SamVerschueren/listr) library for multi step commands
 1. Run `yarn test` before committing your changes
+1. Run `yarn release` to publish using [np CLI](https://github.com/sindresorhus/np)
+
+**Design Principles**
+
+- Fewer flags is better
+- Works across all platforms
+- Fewer features
+- Contributions must have and pass tests

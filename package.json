@@ -31,6 +31,8 @@
     "eslint-plugin-oclif": "^0.1.0",
     "globby": "^10",
     "mocha": "^5",
+    "nodemon": "^2.0.2",
+    "np": "^6.2.0",
     "nyc": "^14",
     "ts-node": "^8",
     "typescript": "^3.8.3"
@@ -66,6 +68,7 @@
     "posttest": "yarn lint",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "lint": "eslint . --ext .ts --config .eslintrc.js --fix",
+    "release": "np",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "test:watch": "nodemon --delay 2 --ext ts --exec yarn test",
     "version": "oclif-dev readme && git add README.md"
