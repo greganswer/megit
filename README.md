@@ -74,6 +74,3 @@ _See code: [src/commands/open.ts](https://github.com/greganswer/megit/blob/v0.0.
 1. Use the [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) library to ask for user input
 1. Use the [listr](https://github.com/SamVerschueren/listr) library for multi step commands
 1. Run `yarn test` before committing your changes
-
-**References:**
-- [eslint-plugin-oclif](https://github.com/oclif/eslint)
