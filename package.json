@@ -11,6 +11,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "open": "^7.0.2",
     "tslib": "^1"
   },
   "devDependencies": {
@@ -20,9 +21,11 @@
     "@types/mocha": "^5",
     "@types/node": "^10",
     "chai": "^4",
-    "eslint": "^5.13",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
+    "eslint-plugin-import": "^2.20.1",
     "globby": "^10",
     "mocha": "^5",
     "nyc": "^14",
@@ -57,6 +60,7 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "test:watch": "nodemon --delay 2 --ext ts --exec yarn test",
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"

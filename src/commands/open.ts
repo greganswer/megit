@@ -1,25 +1,11 @@
-import {Command, flags} from '@oclif/command'
+import { Command } from '@oclif/command'
+// import open = require('open'); // https://github.com/sindresorhus/open
 
 export default class Open extends Command {
-  static description = 'describe the command here'
-
-  static flags = {
-    help: flags.help({char: 'h'}),
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: 'name to print'}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
-  }
-
-  static args = [{name: 'file'}]
+  static description = 'Open an issue in the default web browser'
 
   async run() {
-    const {args, flags} = this.parse(Open)
-
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from /Users/greganswer/code/personal/megit/src/commands/open.ts`)
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
-    }
+    this.log('Opening issue...')
+    open("https://github.com/sindresorhus/open")
   }
 }
